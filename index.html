@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap');
+        
+        body {
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+            background: url('back.jpg') no-repeat center center fixed;
+            background-size: 40%;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .container {
+            margin: 5% auto;
+            max-width: 90%;
+            width: 600px;
+            background: rgba(48, 52, 53, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            animation: fadeIn 2s;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            border: 2px solid #ffcc00;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .image {
+            width: 120px;
+            border-radius: 50%;
+            margin: 10px;
+            border: 3px solid #ffcc00;
+        }
+        .text {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 5px;
+            transition: all 0.3s;
+            font-family: 'Dancing Script', cursive;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+            color: rgb(96, 197, 255);
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .text {
+                font-size: 30px;
+            }
+            .image {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #faea0f; text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);">💖 Wedding Invitation 💖</h1>
+        <p id="inviteText" class="text">We request the honor of your presence on the occasion of wedding ceremony of</p>
+        <p class="text"></p>
+        <p id="groom" class="text"><span style="font-size: 40px; font-weight: bold; color: #ffe81b;">Pundlik Rathod</span><br>S/o: Mr. Nagendra Rathod & Mrs. Parvatibai<br>Addr: Allipur Thanda, Post Muttungi, Tq Chitagoppa</p>
+        <p id="bride" class="text"><span style="font-size: 40px; font-weight: bold; color: #faea0f;">Nandini Jadhav</span><br>D/o: Mr. Subhash Jadhav & Mrs. Lalitabai<br>Addr: Dinsi k Thanda, Post Kalamud, Tq Kamlapur</p>
+        <img src="pundlik1.jpg" alt="Groom" class="image">
+        <img src="nandu.jpg" alt="Bride" class="image">
+        <p id="date" class="text" style="color: #faea0f;">Wedding Date: March 24, 2025</p>
+        <p id="venue" class="text" style="color: #faea0f;">Venue: Allipur Thanda, Post Muttungi, Tq Chitagoppa</p>
+        
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                inviteText: "You are warmly invited!",
+                groom: "Pundlik Rathod\n S/o: Mr. Nagendra Rathod & Mrs. Parvatibai\nPlace: Allipur Thanda, Post Muttungi, Tq Chitagoppa",
+                bride: "Nandini Jadhav\n D/o: Mr. Subhash Jadhav & Mrs. Lalitabai\nPlace: Dinsi k Thanda, Post Kalamud, Tq Kamlapur",
+                date: "Wedding Date: March 24, 2025",
+                venue: "Venue: Allipur Thanda, Post Muttungi, Tq Chitagoppa"
+            },
+            hi: {
+                inviteText: "आपका हार्दिक स्वागत है!",
+                groom: "पुंडलिक राठौड़\nमाता-पिता: श्री नागेंद्र राठौड़ और श्रीमती पार्वतीबाई\nस्थान: अलीपुर थांडा, पोस्ट मुत्तुंगी, तहसील चिटागोप्पा",
+                bride: "नंदिनी जाधव\nमाता-पिता: श्री सुबाष जाधव और श्रीमती ललिताबाई\nस्थान: दिनसी के थांडा, पोस्ट कलामुद, तहसील कमलापुर",
+                date: "शादी की तारीख: 24 मार्च, 2025",
+                venue: "स्थान: अलीपुर थांडा, पोस्ट मुत्तुंगी, तहसील चिटागोप्पा"
+            },
+            kn: {
+                inviteText: "ನೀವು ಹೃತ್ಪೂರ್ವಕವಾಗಿ ಆಹ್ವಾನಿತರಾಗಿದ್ದೀರಿ!",
+                groom: "ಪುಂಡ್ಲಿಕ್ ರಾಥೋಡ್\nತಂದೆ-ತಾಯಿ: ಶ್ರೀ ನಾಗೇಂದ್ರ ರಾಥೋಡ್ ಮತ್ತು ಶ್ರೀಮತಿ ಪರ್ವತಿಬಾಯಿ\nಸ್ಥಳ: ಅಲೀಪುರ ಠಾಂಡಾ, ಪೋಸ್ಟ್ ಮುಟ್ಟುಂಗಿ, ತಾ. ಚಿತಾಗೋಪ್ಪಾ",
+                bride: "ನಂದಿನಿ ಜಾಧವ್\nತಂದೆ-ತಾಯಿ: ಶ್ರೀ ಸುಬಾಷ್ ಜಾಧವ್ ಮತ್ತು ಶ್ರೀಮತಿ ಲಲಿತಾಬಾಯಿ\nಸ್ಥಳ: ದಿನ್ಸಿ ಕೆ ಠಾಂಡಾ, ಪೋಸ್ಟ್ ಕಲಾಮುದ್, ತಾ. ಕಮಲಾಪುರ",
+                date: "ಮದುವೆ ದಿನಾಂಕ: ಮಾರ್ಚ್ 24, 2025",
+                venue: "ಸ್ಥಳ: ಅಲೀಪುರ ಠಾಂಡಾ, ಪೋಸ್ಟ್ ಮುಟ್ಟುಂಗಿ, ತಾ. ಚಿತಾಗೋಪ್ಪಾ"
+            }
+        };
+
+        function translate(lang) {
+            document.getElementById("inviteText").innerText = translations[lang].inviteText;
+            document.getElementById("groom").innerText = translations[lang].groom;
+            document.getElementById("bride").innerText = translations[lang].bride;
+            document.getElementById("date").innerText = translations[lang].date;
+            document.getElementById("venue").innerText = translations[lang].venue;
+        }
+
+        function speakText() {
+            let speech = new SpeechSynthesisUtterance(document.getElementById("inviteText").innerText);
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+</html>
